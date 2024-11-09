@@ -1,26 +1,76 @@
-// Exibe uma mensagem de boas-vindas quando a página é carregada
-window.onload = function() {
-    alert("Bem-vindo ao meu site!");
-};
-
-// Função para destacar o parágrafo ao ser clicado
-function destacarParagrafo(event) {
-    event.target.style.backgroundColor = "#e0f7fa";
-    event.target.style.fontWeight = "bold";
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-// Seleciona todos os parágrafos e adiciona o evento de clique
-const paragrafos = document.querySelectorAll("section p");
-paragrafos.forEach(paragrafo => {
-    paragrafo.addEventListener("click", destacarParagrafo);
-});
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
 
-// Função para mudar a cor de fundo da galeria ao passar o mouse
-const galeria = document.querySelector(".galeria");
-galeria.addEventListener("mouseover", () => {
-    galeria.style.backgroundColor = "#f0f0f5";
-});
+/* Estilos para o cabeçalho principal */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-galeria.addEventListener("mouseout", () => {
-    galeria.style.backgroundColor = "transparent";
-});
+.titulo-estilizado {
+    font-size: 2em;
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.segundo-titulo {
+    font-size: 1.5em;
+    color: #333;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Seção "Sobre mim" */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #0056b3;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a galeria de imagens */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.galeria li {
+    width: 30%;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
