@@ -19,7 +19,7 @@ body {
 .container {
     width: 80%;
     max-width: 900px;
-    background-color: #fff;
+    background-color: #ffffoo;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ footer {
     text-align: center;
     font-size: 0.9em;
     color: #555;
-    background-color: #f0f0f5;
+    background-color: #ffffoo;
     padding: 10px;
     border-radius: 8px;
     margin-top: 30px;
