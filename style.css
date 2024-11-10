@@ -23,6 +23,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-top: 2px solid #ddd;
 }
 
 /* Estilos para o cabeçalho principal */
@@ -37,12 +38,6 @@ header {
     font-weight: bold;
 }
 
-.segundo-titulo {
-    font-size: 1.5em;
-    color: #333;
-    font-style: italic;
-    margin-top: 20px;
-}
 
 /* Seção "Sobre mim" */
 section {
